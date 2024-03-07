@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: darkgray;
+
+  /* altura minima de 100vh. usar vh("view height", altura de visualização do usuário) é muito mais responsivo.*/
+  min-height: 100vh;
+
+  /* "Display" é a propriedade de como nossos itens serão organizados.
+  a propriedade flex permite com que o item fique mais "flexivel" */
+  display: flex;
+
+  /* 
+  Organiza os elementos em colunas.
+  flex-direction: column; 
+ */
+
+  /* 
+  O "row-gap" é o espaçamento entre os itens em coluna. 
+  row-gap: 15px;
+  */
+
+  /* 
+  O "column-gap" é o espaçamento entre os itens em linha. 
+  column-gap: 15px;
+  */
+
+  /* O "gap" utiliza tanto o row-gap quanto o column-gap. */
+  gap: 0px 15px;
+
+  /* aqui alinhará os itens horizontalmente */
+  justify-content: center;
+  align-items: center;
+
+  /* Aqui corresponde a "qubra dos itens", neste caso,  
+  a função "nowrap" não permite a quebra dos itens na responsividade. 
+    flex-wrap: nowrap;
+  */
+
+  /* Aqui a função permite a quebra dos itens conforme o tamanho da tela,
+  logo sendo mais responsivo. */
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  height: 70px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Aqui representa a largura base do item 
+  flex-basis: 200px;*/
+
+  /* Aqui fará a quebra do item a aprtir de 200px. É bem usado junto com o flex-basis.
+  flex-grow: 1;*/
+}
+
+.item1 {
+  /* Aqui está releacionado com a diminuição dos itens, neste caso,colocando o número 2, 
+  o item 1 ficará menor que os outros 
+  flex-shrink: 2;*/
+  /*   order: 2;*/
+
+  /* Aqui indica um alinhamento próprio na VERTICAl 
+  align-self: flex-start;*/
+}
+
+.item2 {
+  /* ordem: 
+  flex-grow(ocupará todo espaço disponível); 
+  flex-shrink(não diminuirá o item); 
+  flex-basis */
+  flex: 1 0 400px;
+  /*   order: 3;*/
+}
+
+.item3 {
+  /*   order: 1;*/
+}
+
+@media (max-width: 390px) {
+  .item2 {
+    flex: 1 0 620px;
+  }
+}

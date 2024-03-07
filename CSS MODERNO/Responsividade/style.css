@@ -1,0 +1,81 @@
+/* body{
+  background-color: black ;
+  color: white;
+} */
+
+.img-content{
+  width: 765px;
+  height: 400px;
+}
+
+.text-content{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* OBS: 
+  1.É mais interessante começar a modelar do menor px para o maior; 
+  2.É mais inteligente começar a modelar, por exemplo, do 320px e pular para o 425px 
+  do que pular do 320px para 375px;
+  */
+
+@media (max-width: 790px){
+ /* Aqui quando a tela estiver a partir de 795px, ela mudará a cor de fundo.
+  body{
+    background-color: red;
+  } */ 
+  .img-content{
+    width: 100%;
+    height: auto;
+  }
+  .text-content{
+    font-size: 16px;
+  }
+}
+
+/* Responsividade: Mobile First - Tablet */
+@media (max-width:768px){
+  .img-content{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media Query */
+@media (max-width: 510px){
+  .img-content{
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsividade: Mobile First - Mobile L*/
+@media (max-width: 426px){
+  .img-content{
+    width: 100%;
+    height: auto;
+  }
+
+  .title-content{
+    text-align: center;
+  }
+
+  .text-content{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+/* A forma correta de usar o Media Query é em PORCENTAGEM.*/
+@media (max-width: 410px){
+  .text-content{
+    text-align: center;
+  }
+}
+
+/* Responsividade: Mobile First - Mobile S*/
+@media (max-width:320px){
+  .text-content{
+    font-size: 14px;
+  }
+}
+

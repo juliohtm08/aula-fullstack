@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aprofundando os inputs</title>
+</head>
+<body>
+  <h1>Aprofundando os Inputs</h1>
+  <form action="https://www.exemplo.com">
+    <input type="text" name="firstname"><br> <!-- Barra de texto -->
+    <input type="password" name="psw"> <!-- Barra de senha -->
+    <input type="submit" value="submit"><p> <!-- Botão -->
+
+    <!-- <input type="radio"> define um botão de opção  -->
+    <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><p>
+
+    <!-- <input type="checkbox">define uma caixa de seleção -->
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><p>
+
+  <!-- O <input type="color">é usado para campos de entrada que devem conter uma cor -->
+  <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor"><p>
+
+<!-- O <input type="datetime-local">especifica um campo de entrada de data-->
+  <label for="body">Birthday:</label>
+    <input type="date" id="body" name="body"><p>
+
+<!-- O <input type="file"> define um campo de seleção de arquivo e um botão "Procurar" para uploads de arquivos -->
+  <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+
+  <label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+  </form>
+</body>
+</html>

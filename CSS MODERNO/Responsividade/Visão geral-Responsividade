@@ -1,0 +1,9 @@
+---------------------------------------------RESPONSIVIDADE-----------------------------------------------------------
+
+1.O que é?
+-A responsividade consiste na MUDANÇA DE LAYOUT de acordo com o TAMANHO DA TELA.
+
+2. Media Query:
+-O Media Query é um recurso do CSS que visa facilitar o processo de configuração e renderização dos elementos 
+de um site em diferentes tamanhos de tela. Dessa forma, independente do dispositivo que o usuário 
+estiver utilizando, o site irá se adaptar e ficar totalmente responsivo, sem quebras de layout.

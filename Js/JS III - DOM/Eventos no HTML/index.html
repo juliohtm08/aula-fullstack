@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos no HTML</title>
+  </head>
+  <body>
+    <h1>Eventos no HTML</h1>
+
+    <div>
+      <!-- 
+        O evento mouseenter   ocorre quando 
+        o cursor do mouse entra na área de um elemento HTML(EXIGE a ação de click do mouse). 
+        Esse evento é acionado em resposta à entrada do mouse em um elemento e 
+        pode ser manipulado com JavaScript.
+       -->
+
+      <label for="onMouseEnter">Entrada do Mouse:</label>
+      <input type="text" id="onMouseEnter" onmouseenter="onMouseEnter()" />
+    </div>
+    <br />
+    <div>
+      <!-- 
+        O 'onchange' é um evento que ocorre quando 
+        o valor de um elemento HTML com o qual está associado é alterado.  
+      -->
+
+      <!-- 
+        Você pode usar o evento onchange para executar uma ação quando 
+        um usuário seleciona uma opção diferente em um menu suspenso ou quando altera 
+        o conteúdo de um campo de entrada de texto e sai desse campo. 
+      -->
+
+      <label for="onChange">Mudança de Valor:</label>
+      <input
+        type="text"
+        id="onChange"
+        onchange="console.log('Mudança no Valor')"
+      />
+      />
+    </div>
+    <br />
+    <div>
+      <!-- 
+        O evento onfocus ocorre quando 
+        um elemento HTML ganha foco. Este evento é acionado quando o usuário interage com um elemento, 
+        geralmente através de um clique, toque, ou navegação por teclado. Elementos que 
+        podem receber foco incluem campos de entrada, áreas de texto, botões, links e 
+        outros elementos interativos. 
+      -->
+
+      <label for="onFocus">Entrada de Foco:</label>
+      <input
+        type="text"
+        id="onFocus"
+        onfocus="console.log('foco no elemento')"
+      />
+    </div>
+    <br />
+    <div>
+      <!-- 
+        O evento onblur ocorre quando um elemento HTML perde o foco. 
+        Este evento é acionado quando o usuário deixa de interagir 
+        com um elemento, geralmente ao clicar fora dele, tabulando para outro elemento ou 
+        usando outras ações que façam com que o elemento perca o foco. 
+      -->
+
+      <!-- 
+        O evento 'onblur' é comumente usado para realizar ações quando 
+        um usuário finaliza a edição de um campo de entrada, como validação de dados, 
+        atualização de conteúdo ou qualquer outra ação necessária. 
+      -->
+
+      <label for="onBlur">Saída de Foco:</label>
+      <input
+        type="text"
+        id="onBlur"
+        onblur="console.log('desfocado o elemento')"
+      />
+    </div>
+    <br />
+
+    <!-- 
+      O evento 'onclick' ocorre quando um elemento HTML, como um botão, link, imagem 
+      ou qualquer outro elemento interativo, é clicado pelo usuário. 
+      É amplamente utilizado para adicionar comportamentos 
+      de clique a elementos da página da web. 
+    -->
+
+    <button onclick="onClick()">Clique-me!</button>
+
+    <script src="index.js"></script>
+  </body>
+</html>

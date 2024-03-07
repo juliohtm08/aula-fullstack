@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: darkgray;
+  min-height: 100vh;
+  
+  /* O CSS Grid é um sistema de estruturação de layout que o CSS nos fornece. 
+  Diferente do Flexbox, que apenas nos permite trabalhar em uma única dimensão, 
+  o CSS Grid nos permite configurar layouts em duas dimensões (linhas e colunas). 
+  A junção de linhas e colunas formam uma grade, o que dá o nome a esse sistema (Grid). */
+  display: grid;
+  
+  /* Aqui o Grid pode ser usado tanto em PORCENTAGEM(%) quanto em FRAMES(fr).
+  Quanto mais fr ou % colocarmos mais colunas serão feitas, ex: 1fr 2fr 1fr 1fr. 
+  grid-template-columns: 1fr 2 fr 1 fr;*/
+ 
+  /* Também poderia ser feito dessa maneira, no entanto não poderiamos manipular uma coluna em específico,
+  como colocar 2fr na coluna do meio. Teriamos que fazer isto manualmente.*/
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 15px;
+  /*grid-template-rows: repeat(3, 1fr);*/
+  
+  /*Estas propriedades nos permitem indicar qual será o tamanho de novas linhas e colunas criadas. 
+    grid-auto-columns e grid-auto-rows*/
+  grid-auto-rows: minmax(150px, 200px)
+
+}
+
+.item{
+  background-color: white;
+  border: 2px solid black;
+  font-size: 30px;
+  padding: 10px;
+}

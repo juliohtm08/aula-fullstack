@@ -1,0 +1,33 @@
+  qp{
+  /* Aqui define qual fonte será utilizada(podendo usar a do prórpio sistema ou baixadas) */
+  font-family: 'Ruboto', 'Ariel', sans-serif;
+
+  /* Aqui define o tamanho da fonte */
+  font-size: 20px;
+
+  /* Aqui define o peso da fonte, ou seja, dependendo da fonte utilizada, poderá alterar o quão em negrito ela vai estar */
+  font-weight: 600;
+
+  /* Aqui define o espaçamento entre as linhas, podendo ser alterado da forma que desejar */
+  line-height: 2;
+}
+
+h1{
+  /* Aqui define o espaçamento do texto, podendo ele ficar no centro, na direita, na esquerda,... */
+  text-align: left;
+
+  /* Aqui define a decoração do texto */
+  text-decoration: underline;
+
+  /* Aqui Define o tamanho da margem, podendo ela ser do tipo: top, right, left, bottom,... 
+  margin-left: 20px;
+  margin-bottom: 100px;*/
+
+  /* Aqui mostra outra maneira de confugurar uma margem sendo na ordem: top, right, bottom e left */
+  margin: 45px auto 200px auto;
+
+  /* Aqui vai definir o tamanho da margem */
+  width: 15%;
+  border: 2px solid;  
+  padding: 10px;
+}

@@ -1,0 +1,34 @@
+/* 
+Aqui o "*" seleciona TODOS os elementos do documento e aplica o etilo desejado 
+*{
+  border: 2px solid; 
+} 
+*/
+
+/* Aqui é o SELETOR DESCENDÊNCIA, ele estiliza o link.
+li a{ 
+  color: red;
+} 
+*/
+
+/* Aqui é o SELETOR FILHO, ele representa, neste caso: todo "a" que está dentro de "li" receberá um estilo
+li > a{
+  color: red;
+}
+*/
+
+/* Aqui irá estilizar todo "h4" que vier logo depois de um "h1" */
+h1 + h4{
+  border:4px dashed;
+}
+
+
+/* Aqui quer dizer: Busque em todos os Anchors que possuem href="/recibo" e estilize-o*/
+a[href="/recibo"]{
+  color: orange
+}
+
+/* Aqui irá estilizar todos os segundos elementos na listagem de "li" */
+li:nth-of-type(2){
+  color: blue;
+}

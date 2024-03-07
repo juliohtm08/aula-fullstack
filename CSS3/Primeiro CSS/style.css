@@ -1,0 +1,14 @@
+h1{
+  color: purple;
+  border: 2px dashed orange; /* Aqui define-se a borda. O 1º é o WIDTH, o 2º é o STYLE e o 3º é o COLOR */
+}
+
+li{
+  color: green;
+}
+body{
+  /* background-color: grey;  Aqui representa a cor de fundo */
+  background-image: url(https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2022/03/spacex-Ptd-iTdrCJM-unsplash-1000x667.jpg);
+  background-repeat: no-repeat; /* Aqui a imagem de fundo não será repitida */
+  background-size: cover;/* Aqui a imagem se ajusta no fundo da página */
+}
