@@ -1,9 +1,11 @@
+//Arrays bidimensionais
+
 const arr = [
-  "1º Nível",
-  ["2º Nível", 42, true],
+  '1º Nível',
+  ['2º Nível', 42, true],
   [
-    ["3º Nível, 1º item", "Olá mundo!"],
-    ["3º Nível, 2º item", "oi, mundo!"],
+    ['3º Nível, 1º item', 'Olá mundo!'],
+    ['3º Nível, 2º item', 'oi, mundo!'],
   ],
   [],
 ];
@@ -23,9 +25,9 @@ console.log(arr[2][1][1]); // Saída: 'Oi, mundo!'
 
 // Podemos ver claramente a estrutura de uma matriz em uma tabela
 const matriz = [
-  ["l1, c1", "l1, c2", "l1, c3", "l1, c4"],
-  ["l2, c1", "l2, c2", "l2, c3", "l2, c4"],
-  ["l3, c1", "l3, c2", "l3, c3", "l3, c4"],
+  ['l1, c1', 'l1, c2', 'l1, c3', 'l1, c4'],
+  ['l2, c1', 'l2, c2', 'l2, c3', 'l2, c4'],
+  ['l3, c1', 'l3, c2', 'l3, c3', 'l3, c4'],
 ];
 /* 
 console.table(matriz);
@@ -39,6 +41,6 @@ matriz[0].push("Nova coluna");
 for (let i = 0; i < matriz.length; i++) {
   for (let j = 0; j < matriz[i].length; j++) {
     const elemento = matriz[i][j];
-    console.log("Posição: (" + i + "," + j + ") Valor: " + elemento);
+    console.log('Posição: (' + i + ',' + j + ') Valor: ' + elemento);
   }
 }
