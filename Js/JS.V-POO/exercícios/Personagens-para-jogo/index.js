@@ -9,7 +9,7 @@ const gale = new Mage('Gale', 95, 10, 0, 8);
 const laizel = new Warrior('Laizel', 100, 15, 10, 5);
 const warrior = new Warrior('warrior', 100, 15, 10, 5);
 
-console.log(mindFlayer);
+//console.log(mindFlayer);
 //console.log(asterion);
 //console.log(gale);
 //console.log(laizel);
@@ -31,6 +31,6 @@ console.log(mindFlayer); */
 //mindFlayer.attack(asterion);
 //console.log(asterion);
 
-console.log(asterion);
-gale.healLife(asterion);
-console.log(asterion);
+//console.log(asterion);
+//gale.healLife(asterion);
+//console.log(asterion);
