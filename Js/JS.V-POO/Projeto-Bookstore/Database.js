@@ -69,10 +69,19 @@ module.exports = class Database {
   }
 
   showStorage() {
+    console.log('\n=== AUTORES ===');
     console.table(this.#storage.authors);
+
+    console.log('\n=== LIVROS ===');
     console.table(this.#storage.books);
+
+    console.log('\n=== POSTERS ===');
     console.table(this.#storage.posters);
+
+    console.log('\n=== USUÁRIOS ===');
     console.table(this.#storage.users);
+
+    console.log('\n=== PEDIDOS ===');
     console.table(this.#storage.orders.map((order) => order.data));
   }
 };
