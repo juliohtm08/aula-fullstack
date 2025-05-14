@@ -11,7 +11,9 @@ function imcCalculate(peso, altura) {
 async function classification(peso, altura) {
   try {
     const imc = await imcCalculate(peso, altura);
-    console.log(`IMC calculado: ${imc.toFixed(2)}`);
+    console.log(
+      `Altura: ${altura}, peso: ${peso}, IMC calculado: ${imc.toFixed(2)}`
+    );
 
     if (imc < 18.5) {
       return 'magrim que só';
@@ -39,3 +41,16 @@ classification(150, 1.65)
   .finally(() => {
     console.log('Programa finalizado');
   });
+
+classification(60, 1.65)
+  .then((result) => {
+    console.log(`imc: ${result}`);
+  })
+  .catch((err) => {
+    console.log(`Erro foda: ${err}`);
+  })
+  .finally(() => {
+    console.log('Programa finalizado');
+  });
+
+console.log('calculando...');
